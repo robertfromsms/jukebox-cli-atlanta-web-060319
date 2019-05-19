@@ -26,7 +26,7 @@ end
 
 def play(songs)
   puts "Please enter a song name or number:"
-  while true {
+  while true do
     song = gets.chomp
     if (1..songs.length).include?(song)
       song = songs[song-1]
@@ -36,7 +36,7 @@ def play(songs)
     else
       puts "Invalid input, please try again"
     end
-  }
+  end
 end
 
 def exit_jukebox
