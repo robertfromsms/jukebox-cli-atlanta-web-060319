@@ -26,11 +26,15 @@ end
 
 def play(songs)
   puts "Please enter a song name or number:"
-  button = true
-  while button {
+  while true {
     song = gets.chomp
     if (1..songs.length).include?(song)
-      song = songs[]
+      song = songs[song-1]
+      return song
+    elsif songs.include?(song)
+      return song
+    else
+      puts "Invalid input, please try again"
     end
   }
 end
