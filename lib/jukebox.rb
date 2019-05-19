@@ -29,7 +29,7 @@ def play(songs)
   while true do
     song = gets.chomp
     if (1..songs.length).include?(song)
-      song = songs[song-1]
+      song = songs[(song.to_i)-1]
       return song
     elsif songs.include?(song)
       return song
