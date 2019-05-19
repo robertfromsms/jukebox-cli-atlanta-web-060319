@@ -28,7 +28,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   while true do
     song = gets.chomp
-    if (1..songs.length).include?(song)
+    if (1..songs.length).include?(song.to_i)
       song = songs[(song.to_i)-1]
       return song
     elsif songs.include?(song)
