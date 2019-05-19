@@ -23,3 +23,14 @@ def list(songs)
     puts "#{index+1}. #{song}"
   }
 end
+
+def play(songs)
+  puts "Please enter a song name or number:"
+  button = true
+  while button {
+    song = gets.chomp
+    if (1..songs.length).include?(song)
+      song = songs[]
+    end
+  }
+end
